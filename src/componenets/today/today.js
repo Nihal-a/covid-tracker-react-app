@@ -1,24 +1,42 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import './today.css'
-import Card from '../cards/Card'
 import axios from 'axios'
-import {URL} from '../../constants/contant'
-
 
 
 function Today() {
+    const [data, setData] = useState([])
     useEffect(() => {
-    
-        console.log("todayyyy",URL);
-        // axios().get(URL)
+        axios.get('https://disease.sh/v3/covid-19/all').then((response)=>{
+            console.log("daaataa : ",response.data);
+            setData(response.data)
+        })
     }, [])
     return (
         <div>
             <div className="today-section">
             <h3 className="heading">Today :</h3>
-                <Card/>
+                <div className="card-container">
+                    <div className="cards-area">
+                        <h4 className="subheading">Confirmed</h4>
+                        <div className="card">
+                            <h5 className="numbers">{data ? data.todayCases : '0'}</h5>
+                        </div>
+                    </div>
+                    <div className="cards-area">
+                        <h4 className="subheading">Recovered</h4>
+                        <div className="card">
+                            <h5 className="numbers">{data ? data.todayDeaths : '0'}</h5>
+                        </div>
+                    </div>
+                    <div className="cards-area">
+                        <h4 className="subheading">Deaths</h4>
+                        <div className="card">
+                            <h5 className="numbers">{data ? data.todayRecovered : '0'}</h5>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
-        </div>
     )
 }
 
