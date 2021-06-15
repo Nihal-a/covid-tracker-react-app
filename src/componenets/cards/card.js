@@ -1,7 +1,7 @@
 import React from 'react'
 import './card.css'
 
-function card() {
+function Card() {
     return (
         <div>
            
@@ -30,4 +30,4 @@ function card() {
     )
 }
 
-export default card
+export default Card

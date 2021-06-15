@@ -1,7 +1,9 @@
 import React from 'react'
-import Card from '../cards/card'
+import Card from '../cards/Card'
 import './total.css'
-function total() {
+
+
+function Total() {
     return (
         <div className='total-section'>
             <h3 className="heading">Total :</h3>
@@ -10,4 +12,4 @@ function total() {
     )
 }
 
-export default total
+export default Total
