@@ -3,13 +3,14 @@ import Header from './componenets/header/header'
 import './App.css'
 import Today from './componenets/today/today'
 import Total from './componenets/total/total'
-
+import Footer from './componenets/footer/footer'
 export default function App() {
   return (
     <div className='app'>
       <Header />
       <Today/>
       <Total/>
+      <Footer/>
     </div>
   )
 }
