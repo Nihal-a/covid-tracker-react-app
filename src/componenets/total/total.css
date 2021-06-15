@@ -1,0 +1,12 @@
+.total-section{
+    max-width: 85%;
+    margin: auto;
+}
+.heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+  }

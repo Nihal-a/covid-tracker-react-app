@@ -1,0 +1,34 @@
+
+  .card-container {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cards-area{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .subheading {
+    font-size: 27px;
+    font-weight: 300;
+    color: #fff;
+  }
+  .card {
+    width: 368px;
+    height: 170px;
+    background-color: #007E7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  }
+  .numbers{
+      color: #fff;
+      font-size: 50px;
+      font-weight: 700;
+  }
+  
